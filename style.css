@@ -1,0 +1,169 @@
+/*1. Aplique o flexbox no rodapé da seção principal, e posicione os links de forma que fique centralizados e com espaçamento entre eles.
+
+- Defina um mesmo tamanho para os links.
+
+- Não se esqueça de tratar o caso de quebra de linha. */
+
+footer, main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;     
+}
+
+footer a, main a{
+        align-self: center;
+        width: 4rem;
+}
+/* 2. Configure um layout de flexbox para a seção de benefícios da seguinte forma:
+
+- O texto deve ficar à esquerda, e o título à direita.
+
+- O título deve ficar centralizado verticalmente.
+
+- O texto deve ocupar aproximadamente 70% da largura, e o título 30%.*/
+
+.benefits{
+        display: flex;
+        flex-direction: row-reverse;
+
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+}
+.benefits h3{
+        align-self: center;
+        text-align: right;
+        width: 30%;
+}
+.benefits p{
+        align-self: center;
+        text-align: left;
+        width: 70%;
+}
+
+/* 3. Configure um layout de flexbox para a seção de participação da seguinte forma:
+
+- Cada item deve ocupar 50% do espaço disponível.
+
+- O título deverá ficar centralizado verticalmente.*/
+
+.participation{
+        display: flexbox;
+        width: 50%;
+
+        border-top: black 1px solid;
+}
+.participation h3{
+        align-self: center;
+}
+
+/* 4. Inclua uma linha no topo e embaixo das seções de benefícios e participação, utilizando a propriedade border-bottom e border-top respectivamente.
+
+- Remova a ocorrência de borda duplicada entre as duas seções 
+*/
+
+
+
+/*ÚLTIMO EXERCÍCIO */
+/* 1. Defina o elemento .page-wrapper como referência para posicionamento.
+*/
+.page-wrapper{
+        position: relative;
+}
+
+/* 2. Faça com que o painel .explanation ocupe 60% da largura disponível, mas crie um espaçamento a direita de 35% utilizando margin .
+
+- Adicione uma borda à direita do painel de 1px, com a cor #1f295c
+
+- Adicione um espaçamento interno de 2% no lado direito do painel.
+*/
+
+.explanation{
+        width: 60%;
+        margin-right: 35%;
+
+        border-right: 1px #1f295c solid;
+        padding-right: 2%;
+}
+
+/* 3. Agora mova o menu de designs para a direita da página, ocupando o espaço em branco deixado pelo elemento .explanation .
+
+- Faça-o iniciar na parte superior da página, após a parte de introdução (por exemplo, aplicando top: 560px ).
+
+- Faça-o iniciar após o elemento .explanation (por exemplo, aplicando left: 62% ).
+
+- Adicione um espaçamento interno horizontal de 2% no menu para centralizá-lo.
+*/
+
+#design-selection{
+        position:absolute;
+        top: 560px;
+        left: 62%;
+
+        padding-left: 2%;
+        padding-right: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+/* penúltimo exercicio */
+html {
+        width: 80%;
+        max-width: 1280px;
+        align-content: center;
+        margin: auto;
+}
+#zen-intro{
+        height: 550px;
+}
+#design-archives{
+        display: none;
+}
+
+header{
+        background: darkblue;
+        color: antiquewhite;
+        display: inline-block;
+}
+
+header h1, h2{
+        display: inline-block;
+        margin: 10px;
+}
+
+header h1{
+        margin-left: 1em;
+        margin right: 1em;
+}
+
+aside ul{
+        list-style-type: none;
+}
+.aside ul li {
+        margin: 1em;
+        align-items: center;
+}
+/* removed
+.main footer{
+        margin: 4%;
+}
+.main footer a{
+        background-color: aliceblue;
+        color:darkblue;
+
+        padding: 0.5em;
+        display: inline-block;
+        border: 2px;
+        border-style: solid;
+
+} removed */
